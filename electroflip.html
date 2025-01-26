@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Electronics</title>
+    <style>
+     a{
+        text-decoration: none;
+     }  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2874f0;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+}
+
+header .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+header .search-bar button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff9f00;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    color: white;
+}
+
+header .user-options button,
+header .user-options a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+nav.categories {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+}
+
+nav.categories ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.categories ul li {
+    margin-right: 20px;
+}
+
+nav.categories ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section.banner img {
+    width: 100%;
+    display: block;
+}
+
+section.category-overview {
+    padding: 20px;
+}
+
+section.category-overview h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.category-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category {
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+}
+
+section.products {
+    padding: 20px;
+}
+
+section.products h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.product span {
+    font-weight: bold;
+    color: #2874f0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.buy-btn {
+            padding: 10px 15px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #ff5a4e;
+        }
+        ::selection{
+    background-color: rgb(4, 255, 251);
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Flipkart</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for electronics">
+            <button><a href="womenstore.html">Search</button></a>
+        </div>
+        <div class="user-options">
+            <button><a href="loginform.html">Login</button></a>
+            <a href="#">More</a>
+            <a href="cartflip.html">Cart</a>
+        </div>
+    </header>
+
+    <nav class="categories">
+        <ul>
+            <li><a href="flipkartfront.html">Home</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="fashionflipkart.html">Fashion</a></li>
+            <li><a href="groceryflip.html">Grocery</a></li>
+            <li><a href="apppliancesflip.html">Appliances</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <img src="download (40).jpg" alt="Electronics Banner">
+    </section>
+
+    <section class="category-overview">
+        <h2>Categories</h2>
+        <div class="category-grid">
+            <div class="category">
+                <img src="download (9).jpg" alt="Mobiles">
+                <p>Mobiles</p>
+            </div>
+            <div class="category">
+                <img src="download (10).jpg" alt="Laptops">
+                <p>Laptops</p>
+            </div>
+            <div class="category">
+                <img src="download (11).jpg" alt="Tablets">
+                <p>Tablets</p>
+            </div>
+            <div class="category">
+                <img src="download (12).jpg" alt="Televisions">
+                <p>Televisions</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Top Deals on Electronics</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images (3).jpg" alt="Product 1">
+                <p>Smartphone</p>
+                <span>₹15,999</span>
+                <br>
+                <a href="order.html"><button class="buy-btn">Order Now</a></button>
+            </div>
+            <div class="product">
+                <img src="images (4).jpg" alt="Product 2">
+                <p>Laptop</p>
+                <span>₹49,999</span>
+                <br>
+                <a href="order.html"><button class="buy-btn">Order Now</a></button>
+            </div>
+            <div class="product">
+                <img src="download (13).jpg" alt="Product 3">
+                <p>Smartwatch</p>
+                <span>₹4,999</span>
+                <br>
+                <a href="order.html"><button class="buy-btn">Order Now</a></button>
+            </div>
+            <div class="product">
+                <img src="download (14).jpg" alt="Product 4">
+                <p>Tablet</p>
+                <span>₹25,999</span>
+                <br>
+                <a href="order.html"><button class="buy-btn">Order Now</a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Flipkart. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

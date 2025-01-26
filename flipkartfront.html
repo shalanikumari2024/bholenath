@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Front Page</title>
+  <style>
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #2874f0;
+  color: white;
+}
+
+.header .logo h1 {
+  font-size: 1.5rem;
+}
+
+.header .search-bar {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.header .search-bar input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.header .search-bar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #ff9f00;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.header .user-options button {
+  background: #ff9f00;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar {
+  background: #ffe500;
+  padding: 0.5rem 2rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #2874f0;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2874f0;
+  color: white;
+}
+
+        ::selection{
+    background-color: rgb(4, 255, 251);
+    color: red;
+}
+.white{
+  color: white;
+}
+.buy-btn {
+            padding: 10px 15px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #ff5a4e;
+        }
+  </style>
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="logo">
+      <h1>Flipkart</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products, brands, and more">
+      <button><a href="searchflip.html">🔍</button></a>
+    </div>
+    <div class="user-options">
+      <button><a class="white" href="loginform.html">Login</button></a>
+      <button><a class="white" href="cartflip.html">Cart</button></a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li>Home</li>
+      <a href="electroflip.html"><li>Electronics</li></a>
+      <a href="fashionflipkart.html"><li>Fashion</li></a>
+      <a href="furnitureflip.html"><li>Home & Furniture</li></a>
+      <a href="apppliancesflip.html"><li>Appliances</li></a>
+      <a href="groceryflip.html"><li>Grocery</li></a>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="product-grid">
+   
+      <div class="product-card">
+        <img src="download (3).jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>₹500</p>
+        <br>
+        <a href="order.html"><button class="buy-btn">Order Now</a></button>
+      </div>
+      <div class="product-card">
+        <img src="images (2).jpg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>₹1200</p>
+        <br>
+        <a href="order.html"><button class="buy-btn">Order Now</a></button>
+      </div>
+      <div class="product-card">
+        <img src="download (5).jpg" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>₹999</p>
+        <br>
+        <a href="order.html"><button class="buy-btn">Order Now</a></button>
+      </div>
+      <div class="product-card">
+        <img src="images (1).jpg"" alt="Product 4">
+        <h3>Product 4</h3>
+        <p>₹1500</p>
+        <br>
+        <a href="order.html"><button class="buy-btn">Order Now</a></button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Flipkart. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

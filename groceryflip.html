@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Grocery</title>
+  <style>
+      body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2874f0;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar .search-bar input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.navbar .search-bar button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.navbar .cart a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  text-align: center;
+  background: #f8f9fa;
+  padding: 30px 20px;
+}
+
+.categories, .featured-products {
+  padding: 20px;
+}
+
+.categories h2, .featured-products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-grid, .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.category, .product {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.category img, .product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.category:hover, .product:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  text-align: center;
+  background-color: #2874f0;
+  color: white;
+  padding: 10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.buy-btn {
+            padding: 10px 15px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #ff5a4e;
+        }
+        ::selection{
+    background-color: rgb(4, 255, 251);
+    color: red;
+}
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Flipkart Grocery</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products...">
+      <button>Search</button>
+    </div>
+    <div class="cart">
+      <a href="cartflip.html">Cart</a>
+    </div>
+  </header>
+  
+  <main>
+    <section class="banner">
+      <h1>Welcome to Flipkart Grocery</h1>
+      <p>Shop fresh and quality groceries at the best prices!</p>
+    </section>
+
+    <section class="categories">
+      <h2>Shop by Category</h2>
+      <div class="category-grid">
+        <div class="category">
+          <img src="images (6).jpg" alt="Fruits">
+          <p>Fruits</p>
+        </div>
+        <div class="category">
+          <img src="download (20).jpg" alt="Vegetables">
+          <p>Vegetables</p>
+        </div>
+        <div class="category">
+          <img src="images (7).jpg" alt="Grains">
+          <p>Grains</p>
+        </div>
+        <div class="category">
+          <img src="download (21).jpg" alt="Snacks">
+          <p>Snacks</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="download (22).jpg" alt="Apple">
+          <p>Fresh Apples</p>
+          <p>₹120/kg</p>
+          <br>
+          <a href="order.html"><button class="buy-btn">Order Now</a></button>
+        </div>
+        <div class="product">
+          <img src="download (23).jpg" alt="Rice">
+          <p>Basmati Rice</p>
+          <p>₹80/kg</p>
+          <br>
+          <a href="order.html"><button class="buy-btn">Order Now</a></button>
+        </div>
+        <div class="product">
+          <img src="download (24).jpg" alt="Chips">
+          <p>Potato Chips</p>
+          <p>₹50</p>
+          <br>
+          <a href="order.html"><button class="buy-btn">Order Now</a></button>
+        </div>
+        <div class="product">
+          <img src="images (9).jpg" alt="Milk">
+          <p>Organic Milk</p>
+          <p>₹60/L</p>
+          <br>
+          <a href="order.html"><button class="buy-btn">Order Now</a></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Flipkart Grocery. All rights reserved.</p>
+  </footer>
+</body>
+</html>

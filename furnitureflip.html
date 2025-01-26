@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Home & Furniture</title>
+  <style>
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2874f0;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  padding: 8px;
+  width: 50%;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-button, .cart-button {
+  background-color: #ff9800;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.banner {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner h2 {
+  font-size: 32px;
+  color: #2874f0;
+}
+
+.categories, .featured {
+  padding: 20px;
+}
+
+.categories h3, .featured h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-grid, .product-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.category, .product {
+  text-align: center;
+  margin: 10px;
+}
+
+.category img, .product img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  color: green;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #2874f0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.buy-btn {
+            padding: 10px 15px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #ff5a4e;
+        }
+        ::selection{
+    background-color: rgb(4, 255, 251);
+    color: red;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Flipkart</h1>
+      <input type="text" class="search-bar" placeholder="Search for furniture and decor...">
+      <button class="search-button">Search</button>
+      <button class="cart-button"><a href="cartflip.html">Cart</button></a>
+    </div>
+  </header>
+
+  <main>
+  
+    <section class="banner">
+      <h2>Transform Your Home</h2>
+      <p>Discover the best furniture and decor at unbeatable prices.</p>
+    </section>
+
+    <section class="categories">
+      <h3>Shop by Category</h3>
+      <div class="category-grid">
+        <div class="category">
+          <img src="download (28).jpg" alt="Sofas">
+          <h4>Sofas</h4>
+        </div>
+        <div class="category">
+          <img src="download (29).jpg" alt="Beds">
+          <h4>Beds</h4>
+        </div>
+        <div class="category">
+          <img src="download (30).jpg" alt="Dining Tables">
+          <h4>Dining Tables</h4>
+        </div>
+        <div class="category">
+          <img src="download (31).jpg" alt="Wardrobes">
+          <h4>Wardrobes</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h3>Featured Products</h3>
+      <div class="product-grid">
+        <div class="product">
+          <img src="download (32).jpg" alt="Modern Sofa">
+          <h4>Modern Sofa</h4>
+          <p>$299</p>
+          <br>
+          <a href="order.html"><button class="buy-btn">Order Now</a></button>
+        </div>
+        <div class="product">
+          <img src="download (33).jpg" alt="King Size Bed">
+          <h4>King Size Bed</h4>
+          <p>$499</p>
+          <br>
+          <a href="order.html"><button class="buy-btn">Order Now</a></button>
+        </div>
+        <div class="product">
+          <img src="download (34).jpg" alt="Dining Set">
+          <h4>Dining Set</h4>
+          <p>$399</p>
+          <br>
+          <a href="order.html"><button class="buy-btn">Order Now</a></button>
+        </div>
+        <div class="product">
+          <img src="images (11).jpg" alt="Wardrobe">
+          <h4>Wardrobe</h4>
+          <p>$249</p>
+          <br>
+          <a href="order.html"><button class="buy-btn">Order Now</a></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flipkart | Home & Furniture | All rights reserved</p>
+  </footer>
+</body>
+</html>

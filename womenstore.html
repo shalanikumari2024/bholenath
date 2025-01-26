@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Women's Clothing Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #2874f0;
+            padding: 10px 20px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+        .product-title {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product-price {
+            font-size: 20px;
+            color: #e40046;
+            margin-bottom: 15px;
+        }
+        .buy-btn {
+            padding: 10px 15px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #ff5a4e;
+        }
+        .footer {
+            background-color: #2874f0;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 16px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Flipkart Women's Clothing Store
+    </div>
+
+    <div class="container">
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="download (46).jpg" alt="Mobile 1">
+                </div>
+                <div class="product-title">Frock</div>
+                <div class="product-price">₹999</div>
+                <button class="buy-btn"><a href="order.html">Buy Now</button></a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="download (48).jpg" alt="Mobile 2">
+                </div>
+                <div class="product-title">Kurti</div>
+                <div class="product-price">₹499</div>
+                <button class="buy-btn"><a href="order.html">Buy Now</button></a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images (23).jpg" alt="Mobile 3">
+                </div>
+                <div class="product-title">Saree</div>
+                <div class="product-price">3999</div>
+                <button class="buy-btn"><a href="order.html">Buy Now</button></a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="download (47).jpg" alt="Mobile 4">
+                </div>
+                <div class="product-title">Jacket</div>
+                <div class="product-price">₹5999</div>
+                <button class="buy-btn"><a href="order.html">Buy Now</button></a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="download (49).jpg" alt="Mobile 5">
+                </div>
+                <div class="product-title">Formal Dress</div>
+                <div class="product-price">₹3456</div>
+                <button class="buy-btn"><a href="order.html">Buy Now</button></a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images (24).jpg" alt="Mobile 6">
+                </div>
+                <div class="product-title">Uniform</div>
+                <div class="product-price">₹1543</div>
+                <button class="buy-btn"><a href="order.html">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Flipkar tWomen's Clothing Store | All Rights Reserved
+    </div>
+
+</body>
+</html>

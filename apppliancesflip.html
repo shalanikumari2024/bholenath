@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Appliances</title>
+  <style>
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2874f0;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  padding: 8px;
+  width: 50%;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-button, .cart-button {
+  background-color: #ff9800;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.banner {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner h2 {
+  font-size: 32px;
+  color: #2874f0;
+}
+
+.categories {
+  padding: 20px;
+}
+
+.categories h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.category {
+  text-align: center;
+  margin: 10px;
+}
+
+.category img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #2874f0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Flipkart</h1>
+      <input type="text" class="search-bar" placeholder="Search for appliances...">
+      <button class="search-button"><a href="menstoreflip.html">Search</button></a>
+      <button class="cart-button"><a href="cartflip.html">Cart</button></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h2>Best Deals on Appliances</h2>
+      <p>Discover top deals on kitchen and home appliances</p>
+    </section>
+
+    <section class="categories">
+      <h3>Shop by Category</h3>
+      <div class="category-grid">
+        <div class="category">
+          <img src="download (25).jpg" alt="Kitchen Appliances">
+          <h4>Kitchen Appliances</h4>
+        </div>
+        <div class="category">
+          <img src="download (26).jpg" alt="Home Appliances">
+          <h4>Home Appliances</h4>
+        </div>
+        <div class="category">
+          <img src="download (27).jpg" alt="Personal Care">
+          <h4>Personal Care</h4>
+        </div>
+        <div class="category">
+          <img src="images (10).jpg" alt="Cleaning Solutions">
+          <h4>Cleaning Solutions</h4>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flipkart | All rights reserved</p>
+  </footer>
+</body>
+</html>
